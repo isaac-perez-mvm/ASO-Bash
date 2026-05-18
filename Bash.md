@@ -97,3 +97,6 @@ else
 	echo "No eres Root ni ere' na."
 ```
 
+# Bloc 3 ` 'CASE' `
+
+## EX1
