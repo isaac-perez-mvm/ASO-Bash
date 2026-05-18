@@ -51,7 +51,7 @@ elif [ $num -eq 0 ]; then
 	echo "El numero $num es Zero"
 fi
 ```
-## Ex2
+## Ex2 - FALTA POR HACER
 - Comprovar si un fitxer existeix
 - Comprovar si un directori existeix
 
@@ -79,33 +79,21 @@ else
 	echo "Situacio no contemplada"
 fi
 ```
-
+## EX4
 - Comprovar si l'usuari és root
 - Condicions múltiples amb AND (&&) i OR (||),  si existeix el fitxer i té permisos”, o “si l’usuari és administració o és root
-
 ```sh
 #!/bin/bash
-#Comprovar si un número és positiu, negatiu o zero
 
-#Comprovar si un fitxer / directori existeix
+usr=$(woami)
 
-#Comprovar notes
-read -p "Quina es la teva edat" edat
-read -p "Quina es la teva nota" nota
+if [[ "$EUID" -eq 0 || "$usr" == root ]]; then
+	echo "Eres root"
 
-if [$edat -ge 19] && [$nota -gt 4];then
-	echo "Aprovat i major d’edat"
+elif [[ "$EUID" -ne 0 && "$usr" == root ]]; then 
+	echo "No eres Root IMPOSTOR"
 
-elif [$edat -le 19] || [$nota -lt 5];then 
-	echo "No compleix els requisits"
-
-else
-	echo "Situacio no contemplada"
-fi
-#Comprovar si l'usuari es root (&& ||)
-  #si existeix el fitxer i té permisos:
-
-  #si l’usuari és administració o és root
-
-
+else 
+	echo "No eres Root ni ere' na."
 ```
+
