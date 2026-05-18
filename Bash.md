@@ -32,7 +32,25 @@ echo "Aquesta maquina es: $(hostname)"
 Imagina que treballes en un centre educatiu i vols fer un script que revisi automàticament si un recurs està disponible, si l’usuari té permisos o si una nota és apta. Segons el resultat, l’script ha de mostrar un missatge diferent.
 ## Ex1
 - Comprovar si un número és positiu, negatiu o zero
+```sh
+#!/bin/bash
+echo "Positiu, negatiu o zero..."
+sleep 1
+read -p "Introdueix un numero:  " num
 
+if [[ ! $num =~ ^-?[0-9]+$ ]]; then
+	echo "Error: La entrada no es un numero valid T_T"
+
+elif [ $num -gt 0 ]; then
+	echo "El numero $num es positiu"
+	
+elif [ $num -lt 0 ]; then
+	echo "El numero $num es negatiu"
+	
+elif [ $num -eq 0 ]; then
+	echo "El numero $num es Zero"
+fi
+```
 ## Ex2
 - Comprovar si un fitxer existeix
 - Comprovar si un directori existeix
