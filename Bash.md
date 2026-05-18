@@ -6,7 +6,7 @@
 - [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
 
-# Bloc 1 - 'Variables i entrada de dades'
+# Bloc 1 - ' Variables i entrada de dades '
 El teu script podria preguntar:
 - nom de l’usuari,
 - número de dispositius,
@@ -28,7 +28,7 @@ echo "Aquesta maquina es: $(hostname)"
 ```
 
 
-# Bloc 2 - 'IF / ELIF / ELSE'
+# Bloc 2 - ' IF / ELIF / ELSE '
 Imagina que treballes en un centre educatiu i vols fer un script que revisi automàticament si un recurs està disponible, si l’usuari té permisos o si una nota és apta. Segons el resultat, l’script ha de mostrar un missatge diferent.
 ## Ex1
 - Comprovar si un número és positiu, negatiu o zero
