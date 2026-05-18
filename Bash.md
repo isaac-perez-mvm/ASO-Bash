@@ -6,7 +6,7 @@
 - [Troubleshooting](#troubleshooting)
 - [Resources](#resources)
 
-# Bloc 1 - ' Variables i entrada de dades '
+# Bloc 1 - ` Variables i entrada de dades `
 El teu script podria preguntar:
 - nom de l’usuari,
 - número de dispositius,
