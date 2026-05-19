@@ -83,7 +83,8 @@ Posteriormente:
 ```
 crontab -e
 ```
-
+Cada dia a las 01:30
+Min H D M DiaSemana
 ```
-* * * * * /home/escritorio/ASO/Scripts/bloc8_crontab.sh
+30 1 * * * /home/escritorio/ASO/Scripts/bloc8_crontab.sh
 ```
