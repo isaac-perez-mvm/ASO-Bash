@@ -88,3 +88,4 @@ Min H D M DiaSemana
 ```
 30 1 * * * /home/escritorio/ASO/Scripts/bloc8_crontab.sh
 ```
+<img width="531" height="62" alt="image" src="https://github.com/user-attachments/assets/95218cae-f7f0-42a1-a7a5-131107f9181b" />
