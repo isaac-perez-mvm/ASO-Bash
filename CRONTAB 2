@@ -1,7 +1,0 @@
-```sh
-
-
-#Comandos utiles:
-#Porcentaje de uso de almacenamiento
-df / | tail -n 1 | tr -s ' ' | cut -d' ' -f5 
-```
